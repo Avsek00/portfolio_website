@@ -1,26 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avishek Laudary</title>
-    <link rel="icon" type="image/png" href="photos/title.png">
-     <link rel="stylesheet" type="text/css" href="/style.css">
-
-     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9019484078800966"
-     crossorigin="anonymous"></script>
-
-    </head>
-<body bgcolor="black">
-  
-    <div class="header">
-        <h1>Welcome to my website.</h1>
-        <p>The site is currently in progress.</p>
-      </div>
-        
-       
-
-
-  
-</body>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Avishek Laudary | Web Developer</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<h1>Avishek Laudary</h1>
+				<p>Web Developer</p>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section id="about">
+			<div class="container">
+				<h2>About Me</h2>
+				<p>I'm a web developer based in Nepal. I have experience building websites using HTML, CSS, and JavaScript. I also have experience with WordPress and other CMS platforms.</p>
+			</div>
+		</section>
+		<section id="projects">
+			<div class="container">
+				<h2>My Projects</h2>
+				<ul class="project-list">
+					<li>
+						<a href="#">
+							<img src="project-1.jpg" alt="Project 1">
+							<div class="project-details">
+								<h3>Project 1</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="project-2.jpg" alt="Project 2">
+							<div class="project-details">
+								<h3>Project 2</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="project-3.jpg" alt="Project 3">
+							<div class="project-details">
+								<h3>Project 3</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="container">
+				<h2>Contact Me</h2>
+				<form action="submit.php" method="post">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea id="message" name="message" required></textarea>
+					</div>
+					<button type="submit">Send</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Avishek Laudary</p>
